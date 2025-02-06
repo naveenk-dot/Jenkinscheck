@@ -71,3 +71,5 @@
 2025-02-06 14:15:11,657 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JK05\Jen01\src\test\resources
 2025-02-06 14:15:30,102 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JK05\Jen01\src\main\resources
 2025-02-06 14:15:30,106 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JK05\Jen01\src\test\resources
+2025-02-06 14:15:40,218 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JK05\Jen01\src\main\resources
+2025-02-06 14:15:40,226 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JK05\Jen01\src\test\resources
