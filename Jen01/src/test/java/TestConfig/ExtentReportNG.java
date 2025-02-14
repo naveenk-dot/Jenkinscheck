@@ -11,7 +11,6 @@ public class ExtentReportNG {
 		ExtentSparkReporter reporter=new ExtentSparkReporter(path);
 		reporter.config().setReportName("ABA Test Automation result");
 		reporter.config().setDocumentTitle("TestResults");
-		
 		ExtentReports extent =new ExtentReports();
 		extent.attachReporter(reporter);
 		return extent;
