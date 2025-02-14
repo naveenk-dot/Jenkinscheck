@@ -19,7 +19,7 @@ public class DataReaderJson {
 		//read json to string
 	String jsonContent = FileUtils.readFileToString(new File(System.getProperty("user.dir")+"//src//test//java//TestData//data//PurchaseOrder.json"), 
 			StandardCharsets.UTF_8);
-	
+	   
 	//String to HashMap- Jackson Datbind
 	
 	ObjectMapper mapper = new ObjectMapper();

@@ -27,7 +27,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class MakeMyTrip extends BaseTest {
+public class MakeMyTripTest extends BaseTest {
 
 	@DataProvider(name="JSON")
 	public Object[][] getData() throws IOException
@@ -46,7 +46,7 @@ public class MakeMyTrip extends BaseTest {
 		}
 	
 	@Test(groups="Smoke",dataProvider="JSON",retryAnalyzer=Retry.class)
-    public void searchFlight(HashMap<String,String> input) {
+    public void searchFlightTest(HashMap<String,String> input) {
 		LoginPage page=new LoginPage(driver);
 		page.closeSignIn();
 		Assert.assertEquals(driver.getTitle(),"MakeMyTrip - #1 Travel Website 50% OFF on Hotels, Flights & Holiday","test Failed");
@@ -54,8 +54,8 @@ public class MakeMyTrip extends BaseTest {
 		System.out.println(input.get("password"));
 		}
 	
-	@Test(dependsOnMethods= "OpenWebsiteWithoutLogin")
-    public void searchHotel() {
+	@Test(dependsOnMethods= "OpenWebsiteWithoutLoginTest")
+    public void searchHotelTest() {
 		LoginPage page=new LoginPage(driver);
 		page.closeSignIn();
 		Assert.assertEquals(driver.getTitle(),"MakeMyTrip - #1 Travel Website 50% OFF on Hotels, Flights & Holiday","test Failed");
@@ -63,7 +63,7 @@ public class MakeMyTrip extends BaseTest {
 		driver.findElement(By.xpath("//button[contains(text(),'Search')]")).click();
 		}
 	@Test(dataProvider="Excel")
-    public void OpenWebsiteWithoutLogin(String email, String username, String Password) {
+    public void OpenWebsiteWithoutLoginTest(String email, String username, String Password) {
 		LoginPage page=new LoginPage(driver);
 		page.closeSignIn();
 		Assert.assertEquals(driver.getTitle(),"MakeMyTrip - #1 Travel Website 50% OFF on Hotels, Flights & Holiday","test Failed");
