@@ -12,17 +12,25 @@ import Utility.SuperHelper;
 public class LoginPage extends SuperHelper {
 
 	WebDriver driver;
-	
-	public LoginPage(WebDriver driver)
-	{
+
+	public LoginPage(WebDriver driver) {
 		super(driver);
-		this.driver= driver;
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
+
+	@FindBy(xpath = "//span[@class='commonModal__close']")
+	WebElement close;
 	
-	@FindBy(id="Name")
-	WebElement name;
+	@FindBy(xpath = "//span[@class='commonModal__close']")
+	WebElement username;
 	
-	@FindBy(id="Name")
-	List <WebElement> names;
+	@FindBy(xpath = "//span[@class='commonModal__close']")
+	WebElement password;
+
+	
+	public void closeSignIn() {
+		close.click();
+	}
+
 }
