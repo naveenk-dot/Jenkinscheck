@@ -3,14 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestScripts.MakeMyTrip">
+      <class name="TestScripts.ReverseArray">
         <methods>
-          <include name="searchHotel"/>
-          <include name="initializeDriver"/>
-          <include name="closeDriver"/>
-          <include name="OpenWebsiteWithoutLogin"/>
+          <include name="bubbleSort"/>
         </methods>
-      </class> <!-- TestScripts.MakeMyTrip -->
+      </class> <!-- TestScripts.ReverseArray -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
