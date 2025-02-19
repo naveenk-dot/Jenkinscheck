@@ -5329,3 +5329,8 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: Unrecognise
 2025-02-19 19:38:37,393 [Worker-31: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: JenkinTest:Jen01:0.0.1-SNAPSHOT @ C:\Users\Admin\JK05\Jen01\pom.xml.
 2025-02-19 19:38:38,663 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JK05\Jen01\src\main\resources
 2025-02-19 19:38:38,669 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JK05\Jen01\src\test\resources
+2025-02-19 19:39:38,863 [Worker-33: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: JenkinTest:Jen01:0.0.1-SNAPSHOT @ C:\Users\Admin\JK05\Jen01\pom.xml.
+2025-02-19 19:39:40,172 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JK05\Jen01\src\main\resources
+2025-02-19 19:39:40,179 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JK05\Jen01\src\test\resources
+2025-02-19 19:57:57,465 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JK05\Jen01\src\main\resources
+2025-02-19 19:57:57,471 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Admin\JK05\Jen01\src\test\resources
