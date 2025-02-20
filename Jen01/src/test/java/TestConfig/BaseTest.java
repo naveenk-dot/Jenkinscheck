@@ -51,6 +51,7 @@ public class BaseTest {
 				prefs.put("download.default_directory", downloadDir);
 				prefs.put("download.prompt_for_download", false);
 				ChromeOptions options = new ChromeOptions();
+				//options.addArguments("headless");
 				options.addArguments("start-maximized");
 				options.setExperimentalOption("prefs", prefs);
 				driver = new ChromeDriver(options);
@@ -70,12 +71,12 @@ public class BaseTest {
 		}
 	}
 
-	@AfterMethod(alwaysRun = true)
-	public void closeDriver() {
-		if (driver != null) {
-			driver.quit();
-		}
-	}
+//	@AfterMethod(alwaysRun = true)
+//	public void closeDriver() {
+//		if (driver != null) {
+//			driver.quit();
+//		}
+//	}
 
 	//data reader Json
 	public List<HashMap<String, String>> getJsonDataToMap(String filePath) throws IOException {
