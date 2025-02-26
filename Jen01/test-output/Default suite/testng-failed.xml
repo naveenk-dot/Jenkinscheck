@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestScripts.BrokenLinkTest">
+      <class name="RestAPITestScripts.BookingTest">
         <methods>
-          <include name="initializeDriver"/>
-          <include name="checkActions"/>
+          <include name="createBookingTest" invocation-numbers="0"/>
         </methods>
-      </class> <!-- TestScripts.BrokenLinkTest -->
+      </class> <!-- RestAPITestScripts.BookingTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
