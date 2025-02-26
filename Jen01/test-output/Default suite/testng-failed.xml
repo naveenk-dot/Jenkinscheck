@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestScripts.ReverseArray">
+      <class name="RestAPITestScripts.BookingTest">
         <methods>
-          <include name="bubbleSort"/>
+          <include name="createBookingTest" invocation-numbers="0"/>
         </methods>
-      </class> <!-- TestScripts.ReverseArray -->
+      </class> <!-- RestAPITestScripts.BookingTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

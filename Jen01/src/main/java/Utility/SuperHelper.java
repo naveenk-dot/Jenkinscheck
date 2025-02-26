@@ -18,11 +18,34 @@ public class SuperHelper {
 		this.driver = driver;
 	}
 
+	//Explicit Wait
 	public void waitForElement(By findby) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(0));
 		wait.until(ExpectedConditions.visibilityOf(driver.findElement(findby)));
 	}
+	
+	//Scroll Page
+	public void ScrollPage(int horizontal, int vertical )
+	{
+		JavascriptExecutor js=(JavascriptExecutor)driver;
+		js.executeScript("window.scrollBy(horizontal,vertical)");
+	}
+	
+	//JavaScript click element
+	public void javaScriptClick(WebElement element)
+	{
+		JavascriptExecutor js=(JavascriptExecutor)driver;
+		js.executeScript("arguements[0].click();", element);
+	}
+	
+	//Scroll the table which is present in Web[age with css selector
+	public void scrollTable(WebElement Table ,int horizontal, int vertical)
+	{
+		JavascriptExecutor js= (JavascriptExecutor)driver;
+		js.executeScript("document.querySelector('"+Table+"').scrollBy(horizontal,vertical)");
+	}
 
+	//SwitchWindow
 	public void SwitchWindow(String toWindowTitle) {
 
 		{
