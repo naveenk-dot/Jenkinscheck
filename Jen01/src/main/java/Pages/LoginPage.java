@@ -27,7 +27,6 @@ public class LoginPage extends SuperHelper {
 	
 	@FindBy(xpath = "//span[@class='commonModal__close']")
 	WebElement password;
-
 	
 	public void closeSignIn() {
 		close.click();
