@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="RestAPITestScripts.BookingTest">
+      <class name="Utility.SQLConnection">
         <methods>
-          <include name="createBookingTest" invocation-numbers="0"/>
+          <include name="ConnectSQL"/>
         </methods>
-      </class> <!-- RestAPITestScripts.BookingTest -->
+      </class> <!-- Utility.SQLConnection -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
