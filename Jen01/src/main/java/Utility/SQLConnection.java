@@ -19,7 +19,7 @@ public class SQLConnection {
 	{
 		
 		String JDBCURL="jdbc:mysql://localhost:3306/qadbt";	
-		Connection connection= DriverManager.getConnection(JDBCURL,"root","Naveen@08375");
+		Connection connection= DriverManager.getConnection(JDBCURL,"root","Naveen5");
 		Statement statement=connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, 
 		ResultSet.CONCUR_READ_ONLY);
 		ResultSet resultset=statement.executeQuery("Select * from students");
